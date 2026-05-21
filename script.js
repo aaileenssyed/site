@@ -155,12 +155,6 @@ const drawerContentRegistry = {
             <p>• Authors targeted newsletters via Constant Contact, lifting tracking engagement metrics by 30% and student activity by 60%.</p>
         </div>`,
 
-    'ai-voice-response': `
-        <h2 style="font-family: 'Fredoka', sans-serif; color: #ff4d88; font-size: 1.25rem;">🤖 Audio Signal Captured!</h2>
-        <div style="margin-top: 12px; background: #fff3f5; padding: 16px; border-radius: 12px; border: 1px solid var(--pink-plastic-rim);">
-            <p style="color: #22222a; font-weight: 700; font-size: 0.9rem;">"Hi! I'm Aaileen's Packaging Voice Module. Loud and clear!"</p>
-            <p style="margin-top: 8px; color: #5d5d6e; font-size: 0.85rem; line-height: 1.5;">This endpoint is fully active. You are now ready to hook up API request streams directly into this function to handle voice conversations dynamically.</p>
-        </div>`
 };
 
 const drawerOverlay = document.getElementById('drawerOverlay');
