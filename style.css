@@ -347,6 +347,138 @@ body { background-color: #fef6f8; color: var(--text-dark); -webkit-font-smoothin
     transform: none !important; /* Ensure it stays still on hover */
 }
 
+/* Main resume/page layout */
+.resume-container {
+    background: #fffafc;
+    color: #1f2230;
+    font-family: "Inter", "Poppins", Arial, sans-serif;
+}
+
+/* Section headers */
+.section-title,
+h2 {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #111827;
+    font-weight: 800;
+    border-left: 4px solid #ff5c93;
+    padding-left: 14px;
+    margin-bottom: 22px;
+}
+
+/* Professional summary text */
+.professional-summary p {
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: #4b5563;
+    max-width: 680px;
+}
+
+/* Right sidebar */
+.sidebar,
+.technical-directives {
+    background: linear-gradient(180deg, #fff7fb 0%, #ffffff 100%);
+    border: 1px solid #f3d6e4;
+    border-radius: 22px;
+    padding: 26px 24px;
+    box-shadow: 0 12px 30px rgba(89, 38, 70, 0.07);
+}
+
+/* Technical Directives title */
+.technical-directives h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+/* Skill groups */
+.skill-group {
+    margin-top: 26px !important;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #f1dce7;
+}
+
+.skill-group:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Skill group headings */
+.skill-group h3 {
+    font-size: 12.5px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #5a2548;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+/* Tag container */
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+/* Skill tags */
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #f7f3f7;
+    color: #2f2533;
+    border: 1px solid #eadde8;
+    border-radius: 999px;
+    padding: 7px 12px;
+    font-size: 12.5px;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    background: #ffe7f1;
+    border-color: #ffb5d1;
+    transform: translateY(-1px);
+}
+
+/* Professional experience */
+.experience-item {
+    margin-bottom: 34px;
+}
+
+.experience-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.company-name {
+    color: #ff4f88;
+    font-weight: 700;
+}
+
+.date-pill {
+    background: #fff0f5;
+    color: #ff4f88;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Bullet points */
+.experience-item li {
+    color: #4b5563;
+    line-height: 1.75;
+    margin-bottom: 10px;
+}
+
+.experience-item li::marker {
+    color: #ff7aaa;
+}
+
 @media (max-width: 912px) {
     .resume-grid { grid-template-columns: 1fr; gap: 25px; }
     .blister-pack-tray { grid-template-columns: 1fr; }

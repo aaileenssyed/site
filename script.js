@@ -107,13 +107,14 @@ const drawerContentRegistry = {
     'comp-coffee': `
         <h2 style="font-family: 'Fredoka', sans-serif; color: #4e2a59; font-size: 1.25rem;">☕ Current Coffee Order</h2>
         <div style="background: #fff3f5; border: 2px dashed #f9a3b8; padding: 14px; border-radius: 12px; margin-top: 12px;">
-            <p style="color: #22222a; font-weight: 700; font-size: 0.95rem;">Order: Vanilla Sweet Cream Cold Brew</p>
+            <p style="color: #22222a; font-weight: 700; font-size: 0.95rem;">Order: Caramel Macchiato, Extra Hot, Extra Whipping Cream</p>
             <p style="color: #5d5d6e; font-size: 0.88rem; margin-top: 4px;">Status: Actively fueling late-night lab evaluations</p>
         </div>`,
     
     'comp-tedx': `
         <h2 style="font-family: 'Fredoka', sans-serif; color: #4e2a59; font-size: 1.25rem;">🎙️ TEDxLewisUniversity Speaker</h2>
-        <p style="margin-top: 10px; color: #5d5d6e; font-size: 0.88rem; line-height: 1.55;">Delivered a main-stage presentation focused on exploring international student hiring barriers, breaking down systemic workforce communication gaps, and uncovering professional discovery opportunities.</p>`,
+        <p style="margin-top: 10px; color: #5d5d6e; font-size: 0.88rem; line-height: 1.55;">Delivered a main-stage presentation focused on exploring international student hiring barriers, breaking down systemic workforce communication gaps, and uncovering professional discovery opportunities.</p>
+        <p style="color: #5d5d6e; font-size: 0.88rem; margin-top: 4px;"><a href="https://www.youtube.com/watch?v=HxbVofakGqA" target="_blank" rel="noopener noreferrer">Watch the Talk</a></p>`,
     
     'comp-router': `
         <h2 style="font-family: 'Fredoka', sans-serif; color: #4e2a59; font-size: 1.25rem;">📟 IT Analyst Intern // eFusion Solutions</h2>
