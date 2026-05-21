@@ -1,0 +1,355 @@
+:root {
+    --pink-cardboard: #fbcad7;
+    --pink-plastic-rim: #f9a3b8;
+    --pink-light-box: #fff3f5;
+    --neon-branding-pink: #ff4d88;
+    --box-brand-purple: #4e2a59;
+    --text-dark: #22222a;
+    --text-muted: #5d5d6e;
+    --white: #ffffff;
+    --nav-bg: #1c1c22;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+body { background-color: #fef6f8; color: var(--text-dark); -webkit-font-smoothing: antialiased; }
+
+/* ========================================== */
+/* NAVIGATION BAR PROFILE                     */
+/* ========================================== */
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 18px 40px; 
+    background: var(--white); 
+    box-shadow: 0 4px 30px rgba(78, 42, 89, 0.04); 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+}
+.nav-brand { font-weight: 800; font-size: 0.88rem; letter-spacing: 0.18em; color: var(--text-dark); }
+.brand-separator { color: var(--neon-branding-pink); margin: 0 4px; }
+
+.magic-toggle { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    background: var(--nav-bg); 
+    color: var(--white); 
+    border: none; 
+    padding: 12px 24px; 
+    border-radius: 12px; 
+    font-weight: 700; 
+    font-size: 0.88rem;
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out; 
+}
+.magic-toggle:hover { background: var(--neon-branding-pink); transform: translateY(-1px); }
+.wand-icon { width: 16px; height: 16px; }
+.magic-toggle.active-mode { background: var(--neon-branding-pink); }
+
+.view-section { display: none; max-width: 1120px; margin: 40px auto; padding: 0 20px; }
+.view-section.active-view { display: block; }
+
+/* ========================================== */
+/* VIEW 1: CLEAN PREMIUM RESUME VIEW          */
+/* ========================================== */
+.resume-container { background: var(--white); border-radius: 20px; padding: 50px; box-shadow: 0 10px 40px rgba(78, 42, 89, 0.02); border: 1px solid rgba(78, 42, 89, 0.06); }
+.resume-header { text-align: center; margin-bottom: 45px; }
+.resume-header h1 { font-size: 2.8rem; font-weight: 800; color: var(--text-dark); letter-spacing: -0.03em; margin-bottom: 6px; }
+.resume-header .subtitle { color: var(--neon-branding-pink); font-size: 1.15rem; font-weight: 600; }
+.contact-chips { display: flex; justify-content: center; gap: 14px; margin-top: 20px; flex-wrap: wrap; }
+.contact-chips .chip { background: #f6f6fa; padding: 6px 16px; border-radius: 30px; font-size: 0.85rem; font-weight: 600; color: var(--text-muted); }
+
+.resume-grid { display: grid; grid-template-columns: 2.1fr 1fr; gap: 50px; }
+.resume-section { margin-bottom: 35px; }
+.resume-section h2 { font-size: 1.1rem; font-weight: 800; margin-bottom: 24px; color: var(--text-dark); border-left: 4px solid var(--neon-branding-pink); padding-left: 14px; letter-spacing: 0.02em; text-transform: uppercase; }
+.resume-section p { color: var(--text-muted); line-height: 1.7; font-size: 0.95rem; margin-bottom: 15px; }
+
+.timeline-item { margin-bottom: 32px; }
+.timeline-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 6px; }
+.timeline-header h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); }
+.date-badge { background: var(--pink-light-box); color: var(--neon-branding-pink); padding: 4px 12px; border-radius: 8px; font-weight: 700; font-size: 0.78rem; white-space: nowrap; }
+.organization { color: var(--neon-branding-pink); font-weight: 600; font-size: 0.92rem; margin-bottom: 12px; }
+.resume-section ul { list-style: none; }
+.resume-section ul li { position: relative; padding-left: 20px; margin-bottom: 12px; color: var(--text-muted); line-height: 1.6; font-size: 0.93rem; }
+.resume-section ul li::before { content: "✦"; position: absolute; left: 0; color: var(--pink-plastic-rim); font-size: 0.85rem; }
+
+.skill-group h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; color: var(--box-brand-purple); font-weight: 700; }
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
+.skill-tag { background: #f6f6fa; color: var(--text-dark); font-size: 0.82rem; font-weight: 600; padding: 6px 12px; border-radius: 8px; }
+
+/* ========================================== */
+/* VIEW 2: FLAT STEADY PACKAGING FRAME        */
+/* ========================================== */
+.retail-shelf-backdrop { background: #f4cad4; padding: 45px 30px; border-radius: 36px; position: relative; }
+.box-hang-tab { width: 85px; height: 22px; background: rgba(0,0,0,0.1); border-radius: 20px; position: absolute; top: 15px; left: 50%; transform: translateX(-50%); }
+
+.box-outer-container { 
+    background: var(--pink-cardboard); 
+    border: 14px solid var(--pink-plastic-rim); 
+    border-radius: 28px; 
+    padding: 30px; 
+    box-shadow: 0 25px 60px rgba(78, 42, 89, 0.12); 
+    position: relative; 
+    overflow: hidden; 
+}
+
+/* Cellophane Glosscoat Finish Overlay */
+.literal-mint-plastic-shield {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.02) 50%, rgba(255, 255, 255, 0.12) 100%);
+    backdrop-filter: brightness(1.03) contrast(1.03);
+    pointer-events: none; 
+    z-index: 50; 
+    border-radius: 12px;
+}
+.specular-glare-line {
+    position: absolute;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.45) 50%, rgba(255,255,255,0) 100%);
+    transform: rotate(-35deg);
+    opacity: 0.85;
+}
+.reflection-a { width: 160%; height: 65px; top: 12%; left: -30%; }
+.reflection-b { width: 160%; height: 35px; top: 62%; left: -30%; }
+
+.plastic-vacuum-seal-edge {
+    position: absolute;
+    top: 5px; left: 5px; right: 5px; bottom: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+}
+
+/* Brand Headers */
+.box-top-branding { text-align: center; position: relative; margin-bottom: 25px; }
+.main-box-title { font-family: 'Pacifico', cursive; font-size: 3.5rem; color: var(--box-brand-purple); text-shadow: 3px 3px 0px var(--white); font-weight: 400; }
+.starter-pack-tag { position: absolute; right: 5px; top: 0; background: var(--box-brand-purple); color: var(--white); font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 0.7rem; padding: 6px 12px; border-radius: 8px; transform: rotate(10deg); border: 2px solid var(--white); }
+.sub-brand-banner { background: var(--white); color: var(--neon-branding-pink); display: inline-block; padding: 5px 20px; border-radius: 20px; font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 0.8rem; margin-top: 8px; }
+
+.blister-pack-tray {
+    display: grid;
+    grid-template-columns: 1fr 1.65fr;
+    gap: 16px;
+    background: radial-gradient(circle at center, #f7b3c3 0%, #ea9cb0 100%);
+    border-radius: 24px;
+    padding: 16px;
+    box-shadow: inset 0 8px 24px rgba(0,0,0,0.12);
+    border: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Character Chamber Layout */
+.figure-chamber { position: relative; min-height: 460px; cursor: pointer; perspective: 600px; }
+.plastic-well-inset { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.06); border-radius: 18px; box-shadow: inset 0 6px 16px rgba(0,0,0,0.18); z-index: 1; }
+.chamber-content-carrier { position: relative; background: rgba(255, 255, 255, 0.15); border: 1.5px solid rgba(255, 255, 255, 0.4); border-radius: 18px; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 20px 12px; z-index: 2; }
+
+/* ========================================== */
+/* REAL BOX-MOUNTED AUDIO MODULE BUTTON       */
+/* ========================================== */
+.barbie-speak-button {
+    position: relative;
+    background: linear-gradient(135deg, #ff4d88 0%, #e11d5a 100%);
+    color: var(--white);
+    border: 3px solid var(--white);
+    padding: 11px 20px;
+    border-radius: 25px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 6px 14px rgba(225, 29, 90, 0.35), inset 0 -3px 0 rgba(0,0,0,0.2);
+    z-index: 10;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    pointer-events: auto; 
+}
+.speak-mic-icon { width: 14px; height: 14px; }
+
+.barbie-speak-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: linear-gradient(135deg, #ff6b9d 0%, #f12c6b 100%);
+    box-shadow: 0 12px 22px rgba(225, 29, 90, 0.45);
+}
+
+.speak-btn-pulse-wave {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 25px;
+    border: 2px solid var(--neon-branding-pink);
+    opacity: 0;
+    pointer-events: none;
+}
+.figure-chamber.ai-talking .speak-btn-pulse-wave { animation: realAudioBroadcast 1.1s infinite ease-out; }
+
+@keyframes realAudioBroadcast {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.3, 1.4); opacity: 0; }
+}
+
+/* ========================================== */
+/* HIGH-PERFORMANCE 3D HOVER IMAGE ASSETS     */
+/* ========================================== */
+.accessory-chamber-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 10px; 
+}
+.mini-toy-compartment { 
+    position: relative; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    perspective: 400px; /* Gives independent local 3D workspace coordinate depth */
+}
+.mini-well-inset { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.04); border-radius: 14px; box-shadow: inset 0 4px 10px rgba(0,0,0,0.12); z-index: 1; }
+
+/* The containing window stays perfectly locked on grid */
+.mini-content-wrapper { 
+    position: relative; 
+    background: rgba(255, 255, 255, 0.25); 
+    border: 1.5px solid rgba(255, 255, 255, 0.4); 
+    border-radius: 14px; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 12px; 
+    z-index: 2; 
+    transform-style: preserve-3d;
+}
+
+/* Only the target image node itself breaks free and tilts out toward user cursor */
+.premium-3d-asset {
+    max-width: 100%; 
+    max-height: 90px; 
+    object-fit: contain; 
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.12)); 
+    pointer-events: none; 
+    transform: translateZ(0px) rotateX(0deg) rotateY(0deg);
+    transition: transform 0.12s cubic-bezier(0.25, 1, 0.5, 1), filter 0.2s;
+    will-change: transform;
+}
+
+.mini-toy-compartment:hover .premium-3d-asset,
+.figure-chamber:hover .premium-3d-asset { 
+    filter: drop-shadow(0 16px 20px rgba(78, 42, 89, 0.25)); 
+}
+.character-identity-banner { text-align: center; background: rgba(255, 255, 255, 0.95); padding: 8px 14px; border-radius: 12px; border: 1px solid var(--pink-plastic-rim); width: 95%; }
+.character-identity-banner h3 { font-family: 'Fredoka', sans-serif; font-size: 0.8rem; color: var(--box-brand-purple); }
+.interactive-pulse { font-size: 0.6rem; font-weight: 800; color: var(--neon-branding-pink); margin-top: 2px; display: block; }
+
+.wave-action { animation: simpleWiggleMove 0.4s ease-in-out 2; }
+@keyframes simpleWiggleMove { 
+    0%, 100% { transform: scale(1); } 
+    50% { transform: rotate(6deg) scale(1.05); } 
+}
+
+/* ========================================== */
+/* PREMIUM 3D LOGO ROTATION MECHANICS        */
+/* ========================================== */
+.box-bottom-card-footer { 
+    display: grid; 
+    grid-template-columns: 90px 1fr 1.35fr; 
+    gap: 20px; 
+    margin-top: 25px; 
+    align-items: center; 
+    border-top: 2px dashed rgba(78, 42, 89, 0.12); 
+    padding-top: 20px; 
+    perspective: 600px;
+}
+
+.lewis-university-seal-container { 
+    width: 84px; height: 84px; 
+    background: var(--box-brand-purple); 
+    border: 3px solid var(--white); 
+    border-radius: 50%; 
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15); 
+    transform: rotate(-4deg); 
+    cursor: pointer; 
+    overflow: hidden; 
+    display: flex; align-items: center; justify-content: center;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s;
+}
+.lewis-seal-img { width: 100%; height: 100%; object-fit: cover; }
+.seal-fallback-text { display: none; color: var(--white); font-family: 'Fredoka', sans-serif; font-size: 0.7rem; font-weight: 700; text-align: center; }
+
+/* 3D Spin and Dynamic Shadow Scaling on Logo Hover */
+.lewis-university-seal-container:hover {
+    transform: rotateY(180deg) scale(1.12);
+    box-shadow: 0 16px 32px rgba(78, 42, 89, 0.3), 0 0 12px rgba(255, 77, 136, 0.3);
+}
+
+.motto-sticker-tape { background: #fffdf2; font-family: 'Pacifico', cursive; color: var(--neon-branding-pink); padding: 10px; text-align: center; font-size: 1.05rem; border-radius: 4px; border: 1px dashed rgba(249, 163, 184, 0.4); transform: rotate(0.5deg); }
+.includes-manifest-sticker { background: var(--white); border-radius: 14px; padding: 10px; display: flex; align-items: center; gap: 12px; }
+.heart-badge-footer { background: #f15582; color: var(--white); font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 0.58rem; text-align: center; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; }
+.manifest-list-column h5 { font-family: 'Fredoka', sans-serif; font-size: 0.72rem; color: var(--box-brand-purple); }
+.manifest-list-column ul { list-style: none; font-size: 0.68rem; font-weight: 700; color: var(--text-muted); }
+
+.box-legal-footer { font-size: 0.65rem; font-weight: 700; color: #9c8288; text-align: center; margin-top: 18px; }
+
+/* Drawer Modal Architecture */
+.drawer-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(25, 25, 30, 0.4); backdrop-filter: blur(4px); display: none; justify-content: center; align-items: center; z-index: 200; }
+.drawer-content { background: var(--white); padding: 32px; border-radius: 20px; max-width: 480px; width: 90%; position: relative; box-shadow: 0 20px 45px rgba(0,0,0,0.18); }
+.close-drawer { position: absolute; top: 14px; right: 14px; background: var(--pink-light-box); border: none; width: 26px; height: 26px; border-radius: 50%; cursor: pointer; color: var(--neon-branding-pink); font-weight: bold; display: flex; align-items: center; justify-content: center; }
+
+/* Character Chamber - Locked and Static */
+.figure-chamber { 
+    position: relative; 
+    min-height: 460px; 
+    cursor: pointer; 
+}
+
+.figure-chamber .premium-3d-asset {
+    /* Explicitly override any transform inheritance */
+    transform: none !important;
+    transition: filter 0.3s ease;
+}
+
+.figure-chamber:hover .premium-3d-asset {
+    filter: drop-shadow(0 6px 12px rgba(78, 42, 89, 0.2));
+}
+
+/* Accessory Grid Compartments - Dynamic */
+.mini-toy-compartment { 
+    position: relative; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    perspective: 400px; /* Only grid items have 3D perspective context */
+}
+
+/* Character Chamber - Static and Full Size */
+.figure-chamber { 
+    position: relative; 
+    min-height: 460px; 
+    cursor: pointer; 
+    /* Removed extra constraints that caused shrinking */
+}
+
+.figure-chamber .premium-3d-asset {
+    max-width: 100%;
+    max-height: 400px; /* Adjust this to match your desired original height */
+    object-fit: contain;
+    transform: none !important; /* Forces it to ignore any 3D hover physics */
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,0.12));
+    transition: filter 0.3s ease;
+}
+
+.figure-chamber:hover .premium-3d-asset {
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+    transform: none !important; /* Ensure it stays still on hover */
+}
+
+@media (max-width: 912px) {
+    .resume-grid { grid-template-columns: 1fr; gap: 25px; }
+    .blister-pack-tray { grid-template-columns: 1fr; }
+    .figure-chamber { min-height: 380px; }
+    .box-bottom-card-footer { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+}
