@@ -13,189 +13,327 @@
 <body>
 
     <nav class="navbar">
-        <div class="nav-brand">AAILEEN SARWAR SYED <span class="brand-separator">//</span> CYBERSECURITY AI</div>
+    <div class="nav-brand">AAILEEN SARWAR SYED <span class="brand-separator">//</span> CYBERSECURITY AI</div>
+
+    <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggleBtn" aria-label="Switch Light or Dark Mode">
+            <span id="themeIcon">☾</span>
+            <span id="themeText">Dark Mode</span>
+        </button>
+
         <button class="magic-toggle" id="viewToggleBtn" aria-label="Switch Portfolio View">
             <svg class="wand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M15 4l5 5M3 21l12-12M20.5 2.5a2.121 2.121 0 0 1 3 3L21 8l-3-3 2.5-2.5zM19 12h2M12 5v2M17 7l1.5 1.5M11 13l-1.5 1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span id="toggleText">Jazz It Up!</span>
         </button>
-    </nav>
+    </div>
+</nav>
 
     <main id="standardView" class="view-section active-view">
-        <div class="resume-container">
-            <header class="resume-header">
-                <h1>Aaileen Sarwar Syed</h1>
-                <p class="subtitle">Cybersecurity MS Graduate & IT & Networking Specialist</p>
-                <div class="contact-chips">
-                    <span class="chip">📍 Chicago, IL</span>
-                    <span class="chip">✉️ aaileenuni@gmail.com</span>
-                    <span class="chip">🔗 www.linkedin.com/in/aaileensyed</span>
-                </div>
-            </header>
+    <div class="portfolio-container">
 
-            <div class="resume-grid">
-                <div class="main-column">
-                    <section class="resume-section">
-                        <h2>Professional Summary</h2>
-                        <p>Cybersecurity graduate student and early-career Network/IT professional with hands-on experience supporting LAN/WAN troubleshooting, Cisco router/switch environments, DNS/DHCP, VPN, firewall concepts, endpoint protection, PRTG monitoring, VMware labs, and enterprise support workflows. 
-                        </br> Experienced in documenting incidents, root-cause findings, configuration logic, monitoring evidence, and escalation steps for technical and management audiences. 
-                        </br> AI enthusiast with completed Claude 101 certification, AI-security project experience, and active participation in Google's Search Priority User Program, evaluating emerging AI-powered Search and digital discovery experiences.</p>
-                    </section>
-                    
-                     <section class="resume-section">
-                        <h2>Certifications</h2>
-                       
-                          <div class="timeline-item">
-                            <ul>
-                                <li>Claude 101 Certification</li>
-                                <li>IBM Cybersecurity Professional Certificate modules: Introduction to Hardware and Operating Systems </li>
-                                <li>Google Cybersecurity Professional Certificate modules</li>
-                                <li>Data Analyst Certificate - Fullstack Academy</li>
-                                <li>In Progress: Cisco CCNA, CompTIA Security+</li>
-                            </ul>
-                        </div> 
+        <section class="hero-card">
+            <div class="hero-eyebrow">Cybersecurity • Networking • AI-Assisted Technical Workflows</div>
+            <h1>Aaileen Sarwar Syed</h1>
+            <p class="hero-subtitle">
+                Cybersecurity MS Graduate with hands-on experience in IT support, network troubleshooting,
+                monitoring tools, firewall logic, VMware labs, AI-powered search evaluation, and technical communication.
+            </p>
 
-                    <section class="resume-section">
-                        <h2>Professional Experience</h2>
-                       
-                          <div class="timeline-item">
-                            <div class="timeline-header">
-                                <h3>Google Search Priority User Program Participant</h3>
-                                <span class="date-badge">Apr 2025 – Present</span>
-                            </div>
-                            <div class="organization">Google </div>
-                            <ul>
-                                <li>Selected for a Google user research and feedback program focused on emerging AI-powered Search features, digital discovery experiences, and large-scale information systems.</li>
-                                <li>Evaluate new functionalities, test AI-driven experiences, and share product feedback on usability, relevance, user behavior, and search experience quality.</li>
-                                <li>Collaborate through structured feedback to help product teams improve future search products while representing a diverse user perspective in AI and UX innovation.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-header">
-                                <h3>Graduate Assistant</h3>
-                                <span class="date-badge">Jan 2025 – May 2026</span>
-                            </div>
-                            <div class="organization">Office of Community Engagement and Experiential Learning, Lewis University</div>
-                            <ul>
-                                <li>Support multi-user academic and operational systems for 200+ students each semester, including records, data accuracy, reporting, access guidance, and process troubleshooting.</li>
-                                <li>Troubleshoot access, connectivity, platform, and workflow issues while documenting procedures and escalating when needed for operational consistency.</li>
-                                <li>Maintain Collaboratory records and the Master Course List, improving tracking accuracy, documentation quality, and accessibility for staff and students.</li>
-                                <li>Design bi-weekly Constant Contact newsletters and lead onboarding/reflection sessions, increasing partner engagement by 30% and participation by 60%.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-header">
-                                <h3>IT Analyst Intern</h3>
-                                <span class="date-badge">Oct 2022 – Jan 2023</span>
-                            </div>
-                            <div class="organization">eFusion Solutions, Hoffman Estates, IL</div>
-                            <ul>
-                                <li>Resolved 30+ weekly support tickets involving Windows systems, applications, remote access, VPN connectivity, endpoint security alerts, and network troubleshooting.</li>
-                                <li>Assisted with Cisco router/switch troubleshooting, LAN connectivity validation, IP assignments, DNS, DHCP, VPN, firewall logic, and remote desktop support across client environments.</li>
-                                <li>Configured and monitored 15+ client environments using PRTG, Sophos, and Webroot to support uptime, endpoint visibility, alert review, and infrastructure reliability.</li>
-                            </ul>
-                        </div>
-
-                          <div class="timeline-item">
-                            <div class="timeline-header">
-                                <h3>UI/UX Intern</h3>
-                                <span class="date-badge">May 2022  – July 2022 </span>
-                            </div>
-                            <div class="organization">Ikigai: The Art of Living, Hyderabad, TS </div>
-                            <ul>
-                                <li>Co-designed website UI using Figma and improved clarity, accessibility, and navigation through usability testing and competitor analysis.</li>
-                                <li>Conducted user research and created personas to inform design decisions and improve the overall user experience.</li>
-                            </ul>
-                        </div>
-
-                    </section>
-                </div>
-
-                <div class="sidebar-column">
-                    <section class="resume-section">
-                        <h2>Core Skills</h2>
-                        <div class="technical-directives">
-    <div class="skill-group">
-        <h3>Networking & Systems</h3>
-        <div class="tag-cloud">
-            <span class="skill-tag">TCP/IP</span>
-            <span class="skill-tag">LAN/WAN</span>
-            <span class="skill-tag">VLANs</span>
-            <span class="skill-tag">Subnetting</span>
-            <span class="skill-tag">Routing/Switching</span>
-            <span class="skill-tag">L2/L3 Concepts</span>
-            <span class="skill-tag">Cisco Routers/Switches</span>
-            <span class="skill-tag">DNS/DHCP</span>
-            <span class="skill-tag">VPN</span>
-            <span class="skill-tag">OSPF/BGP/EIGRP</span>
-        </div>
-    </div>
-
-    <div class="skill-group">
-        <h3>Security & Monitoring</h3>
-        <div class="tag-cloud">
-            <span class="skill-tag">Firewall Logic</span>
-            <span class="skill-tag">IDS/IPS Concepts</span>
-            <span class="skill-tag">Least Privilege</span>
-            <span class="skill-tag">Access Control</span>
-            <span class="skill-tag">Sophos</span>
-            <span class="skill-tag">Webroot</span>
-            <span class="skill-tag">PRTG</span>
-            <span class="skill-tag">OpenVAS</span>
-            <span class="skill-tag">Nessus Exposure</span>
-            <span class="skill-tag">Snort Exposure</span>
-        </div>
-    </div>
-
-    <div class="skill-group">
-        <h3>Cloud & Automation</h3>
-        <div class="tag-cloud">
-            <span class="skill-tag">AWS Networking</span>
-            <span class="skill-tag">Azure Networking</span>
-            <span class="skill-tag">PowerShell</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Git/GitHub</span>
-            <span class="skill-tag">Documentation</span>
-            <span class="skill-tag">Change Tracking</span>
-        </div>
-    </div>
-
-    <div class="skill-group">
-        <h3>Analysis & AI Tools</h3>
-        <div class="tag-cloud">
-            <span class="skill-tag">Wireshark</span>
-            <span class="skill-tag">Nmap</span>
-            <span class="skill-tag">Zeek Concepts</span>
-            <span class="skill-tag">Excel</span>
-            <span class="skill-tag">Power BI</span>
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">Matplotlib</span>
-            <span class="skill-tag">Google AI Studio</span>
-            <span class="skill-tag">Claude 101</span>
-            <span class="skill-tag">Prompt Engineering</span>
-            <span class="skill-tag">AI Search Evaluation</span>
-        </div>
-    </div>
-</div>
-
-                    </section>
-
-                    <section class="resume-section">
-                        <h2>Education & Status</h2>
-                        <p style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">MS in Cybersecurity</p>
-                        <p style="font-size: 0.85rem; margin-bottom: 12px;">Lewis University // Expected May 2026<br>GPA: 3.9 / 4.0</p>
-                        
-                        <p style="font-size: 0.9rem; font-weight: 700; color: var(--text-dark);">B.Tech in Computer Science Eng.</p>
-                        <p style="font-size: 0.85rem;">JNTU Hyderabad // May 2024<br>Graduated with Honors</p>
-                    </section>
-                </div>
+            <div class="hero-meta">
+                <span>📍 Chicago, IL</span>
+                <span>🎓 MS Cybersecurity, Lewis University</span>
+                <span>GPA: 3.9 / 4.0</span>
             </div>
-        </div>
-    </main>
+
+            <div class="hero-actions">
+                <a href="mailto:aaileenuni@gmail.com" class="primary-btn">Contact Me</a>
+                <a href="https://www.linkedin.com/in/aaileensyed" target="_blank" rel="noopener noreferrer" class="secondary-btn">LinkedIn</a>
+           </div>
+        </section>
+
+        <section class="portfolio-section">
+            <h2>Currently Targeting</h2>
+            <p class="section-intro">
+                I am focused on early-career roles where I can combine troubleshooting, networking fundamentals,
+                cybersecurity monitoring, documentation, and AI-assisted technical workflows.
+            </p>
+
+            <div class="role-strip">
+                <span>IT Support</span>
+                <span>Network Support</span>
+                <span>NOC Technician</span>
+                <span>SOC Analyst Tier 1</span>
+                <span>Junior Cybersecurity Analyst</span>
+                <span>Technical Support Engineer</span>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <h2>Skill Stack</h2>
+            <p class="section-intro">
+                My skill set sits across IT support, networking, cybersecurity, monitoring, AI tools, and technical communication.
+                I’m building depth through hands-on labs, certifications, CTF work, and real support experience.
+            </p>
+
+            <div class="skill-story-list">
+
+                <article class="skill-story-card">
+                    <div class="skill-story-header">
+                        <span class="skill-icon">🌐</span>
+                        <div>
+                            <h3>Networking & Infrastructure</h3>
+                            <p>Understanding how systems connect, communicate, break, and get fixed.</p>
+                        </div>
+                    </div>
+                    <p>
+                        Hands-on exposure to LAN/WAN troubleshooting, TCP/IP, VLANs, subnetting, routing/switching,
+                        Cisco router/switch environments, DNS, DHCP, VPN workflows, and L2/L3 networking concepts.
+                    </p>
+                    <div class="tag-cloud">
+                        <span class="skill-tag">TCP/IP</span>
+                        <span class="skill-tag">LAN/WAN</span>
+                        <span class="skill-tag">Subnetting</span>
+                        <span class="skill-tag">DNS/DHCP</span>
+                        <span class="skill-tag">VPN</span>
+                        <span class="skill-tag">Cisco Routers/Switches</span>
+                        <span class="skill-tag">Routing & Switching</span>
+                    </div>
+                </article>
+
+                <article class="skill-story-card">
+                    <div class="skill-story-header">
+                        <span class="skill-icon">🛡️</span>
+                        <div>
+                            <h3>Security, Monitoring & Troubleshooting</h3>
+                            <p>Connecting alerts, evidence, documentation, and escalation into a clear workflow.</p>
+                        </div>
+                    </div>
+                    <p>
+                        Experience reviewing monitoring evidence, endpoint alerts, troubleshooting logs, firewall logic,
+                        least-privilege concepts, IDS/IPS exposure, and incident documentation for technical and management audiences.
+                    </p>
+                    <div class="tag-cloud">
+                        <span class="skill-tag">Firewall Logic</span>
+                        <span class="skill-tag">Least Privilege</span>
+                        <span class="skill-tag">PRTG</span>
+                        <span class="skill-tag">Sophos</span>
+                        <span class="skill-tag">Webroot</span>
+                        <span class="skill-tag">OpenVAS</span>
+                        <span class="skill-tag">Nessus Exposure</span>
+                        <span class="skill-tag">Snort Exposure</span>
+                    </div>
+                </article>
+
+                <article class="skill-story-card">
+                    <div class="skill-story-header">
+                        <span class="skill-icon">💻</span>
+                        <div>
+                            <h3>Systems, Labs & Technical Tools</h3>
+                            <p>Building practical confidence through labs, virtual machines, scripting, and analysis tools.</p>
+                        </div>
+                    </div>
+                    <p>
+                        Comfortable working with Windows, macOS, Linux Ubuntu/Kali, VMware, VirtualBox, Microsoft 365,
+                        PowerShell, Python, SQL, Git/GitHub, Wireshark, Nmap, Excel, Power BI, Pandas, and Matplotlib.
+                    </p>
+                    <div class="tag-cloud">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">VMware</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">PowerShell</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </article>
+
+                <article class="skill-story-card">
+                    <div class="skill-story-header">
+                        <span class="skill-icon">🤖</span>
+                        <div>
+                            <h3>AI, Search & Technical Communication</h3>
+                            <p>Using AI as a thinking, documentation, learning, and workflow-support layer.</p>
+                        </div>
+                    </div>
+                    <p>
+                        Completed Claude 101 and actively build AI literacy through prompt engineering, Google AI Studio,
+                        AI-powered search evaluation, product feedback, and AI-assisted cybersecurity learning workflows.
+                    </p>
+                    <div class="tag-cloud">
+                        <span class="skill-tag">Claude 101</span>
+                        <span class="skill-tag">Google AI Studio</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">AI Search Evaluation</span>
+                        <span class="skill-tag">Product Feedback</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <h2>Featured Experience</h2>
+
+            <div class="experience-list">
+
+                <article class="experience-card">
+                    <div class="experience-card-header">
+                        <div>
+                            <h3>Google Search Priority User Program Participant</h3>
+                            <p>Google • Remote</p>
+                        </div>
+                        <span class="date-badge">Apr 2025 – Present</span>
+                    </div>
+                    <ul>
+                        <li>Selected for a user research and feedback program focused on emerging AI-powered Search features, digital discovery experiences, and large-scale information systems.</li>
+                        <li>Evaluate new functionalities and share feedback on usability, relevance, user behavior, and search experience quality.</li>
+                        <li>Connects directly to my interest in AI, digital trust, information quality, and responsible technology use.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-card">
+                    <div class="experience-card-header">
+                        <div>
+                            <h3>Graduate Assistant</h3>
+                            <p>Office of Community Engagement and Experiential Learning, Lewis University</p>
+                        </div>
+                        <span class="date-badge">Jan 2025 – May 2026</span>
+                    </div>
+                    <ul>
+                        <li>Supported multi-user academic and operational systems for 200+ students each semester, including records, reporting, access guidance, and process troubleshooting.</li>
+                        <li>Maintained Collaboratory records and the Master Course List to improve tracking accuracy, documentation quality, and accessibility.</li>
+                        <li>Designed bi-weekly Constant Contact newsletters and supported onboarding/reflection sessions, increasing partner engagement by 30% and participation by 60%.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-card">
+                    <div class="experience-card-header">
+                        <div>
+                            <h3>IT Analyst Intern</h3>
+                            <p>eFusion Solutions • Hoffman Estates, IL</p>
+                        </div>
+                        <span class="date-badge">Oct 2022 – Jan 2023</span>
+                    </div>
+                    <ul>
+                        <li>Resolved 30+ weekly support tickets involving Windows systems, applications, remote access, VPN connectivity, endpoint security alerts, and network troubleshooting.</li>
+                        <li>Assisted with Cisco router/switch troubleshooting, LAN connectivity validation, IP assignments, DNS, DHCP, VPN, firewall logic, and remote desktop support.</li>
+                        <li>Configured and monitored 15+ client environments using PRTG, Sophos, and Webroot to support uptime, endpoint visibility, alert review, and infrastructure reliability.</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <h2>Featured Projects</h2>
+
+            <div class="project-list">
+
+                <article class="project-card">
+                    <div class="project-label">AI + Network Security</div>
+                    <h3>AI-Assisted Firewall Rule and Network Security Policy Generator</h3>
+                    <p>
+                        Built an educational security tool that converts plain-English server/network requirements into Linux
+                        iptables firewall rules using a default-deny model.
+                    </p>
+                    <ul>
+                        <li>Generated explicit allow rules for SSH, HTTP, HTTPS, and ICMP.</li>
+                        <li>Explained risk level, business purpose, and least-privilege reasoning.</li>
+                        <li>Flagged risky configurations such as broad SSH exposure.</li>
+                    </ul>
+                    <button class="case-study-btn" onclick="openCaseStudy('firewall')">Open Case Study</button>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-label">AI + Security Research</div>
+                    <h3>Authentify AI — Long-Range Attention for Deepfake Detection</h3>
+                    <p>
+                        Built a YOLOv5/CNN deepfake detection model with long-range attention, achieving 92% detection accuracy
+                        on 10,000+ images.
+                    </p>
+                    <button class="case-study-btn" onclick="openCaseStudy('authentify')">Open Case Study</button>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-label">Blockchain + Cloud Security</div>
+                    <h3>Blockchain Technique for Decentralized Cloud Environments</h3>
+                    <p>
+                        Designed a decentralized file storage system using Ethereum smart contracts, SHA-256 hashing, and IPFS
+                        integration to improve storage reliability.
+                    </p>
+                    <button class="case-study-btn" onclick="openCaseStudy('blockchain')">Open Case Study</button>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <h2>Proof of Momentum</h2>
+
+            <div class="achievement-grid">
+
+                <article class="achievement-card">
+                    <span class="achievement-icon">🏆</span>
+                    <h3>3rd Place, Advanced Track</h3>
+                    <p>Capture the Flame CTF at University of Illinois Chicago, competing in practical cybersecurity challenges across forensics, OSINT, analysis, and security problem-solving.</p>
+                </article>
+
+                <article class="achievement-card">
+                    <span class="achievement-icon">🛡️</span>
+                    <h3>National Cyber League</h3>
+                    <p>Ranked 466 out of 6,981 nationally through Cyber Skyline competitions focused on practical cybersecurity skills.</p>
+                </article>
+
+                <article class="achievement-card">
+                    <span class="achievement-icon">🎙️</span>
+                    <h3>TEDxLewis University Speaker</h3>
+                    <p>Delivered a talk on international student hiring barriers, communication, and opportunity.</p>
+                </article>
+
+                <article class="achievement-card">
+                    <span class="achievement-icon">👩‍💻</span>
+                    <h3>Girls Who Code President</h3>
+                    <p>Organized coding workshops, security/networking fundamentals sessions, speaker-led events, and weekly co-working/networking hours.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="portfolio-section education-cert-section">
+            <h2>Education & Certifications</h2>
+
+            <div class="education-cert-grid">
+
+                <article class="info-card">
+                    <h3>Master of Science in Cybersecurity</h3>
+                    <p>Lewis University</p>
+                    <p><strong>Graduated May 2026 • GPA: 3.9 / 4.0</strong></p>
+                </article>
+
+                <article class="info-card">
+                    <h3>B.Tech in Computer Science Engineering</h3>
+                    <p>JNTU Hyderabad</p>
+                    <p><strong>Graduated with Honors • May 2024</strong></p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Certifications & Learning</h3>
+                    <ul>
+                        <li>Claude 101 Certification</li>
+                        <li>IBM Introduction to Hardware and Operating Systems</li>
+                        <li>Google Cybersecurity Professional Certificate modules</li>
+                        <li>Data Analyst Certificate — Fullstack Academy</li>
+                        <li>In Progress: Cisco CCNA, CompTIA Security+</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+    </div>
+</main>
 
     <section id="jazzView" class="view-section">
         <div class="retail-shelf-backdrop">
@@ -211,7 +349,7 @@
                 
                 <div class="box-top-branding">
                     <div class="sparkle-star left-star">✦</div>
-                    <h1 class="main-box-title">@sidequeststack</h1>
+                    <h1 class="main-box-title">Aaileen Sarwar Syed</h1>
                     <div class="sparkle-star right-star">✦</div>
                     
                     <div class="starter-pack-tag">STARTER PACK</div>
@@ -223,8 +361,14 @@
                     <div class="figure-chamber" onclick="openDrawer('comp-doll')">
                         <div class="plastic-well-inset"></div>
                         <div class="chamber-content-carrier">
-                            <img src="assets/avatar-doll.png" alt="Aaileen Character Figure" class="doll-render premium-3d-asset">
-                        
+                            <img 
+    src="assets/avatar-doll.png" 
+    data-light-src="assets/avatar-doll.png"
+    data-dark-src="assets/avatar-doll-dark.png"
+    alt="Aaileen Character Figure" 
+    class="doll-render premium-3d-asset"
+    id="avatarDollImg"
+>
                             <div class="character-identity-banner">
                                 <h3>AAILEEN AVATAR</h3>
                                 <span class="interactive-pulse">TAP TO UNBOX</span>
@@ -312,7 +456,12 @@
             <div id="drawerInnerTarget"></div>
         </div>
     </div>
-
+<div class="case-study-overlay" id="caseStudyOverlay" onclick="closeCaseStudy(event)">
+    <div class="case-study-modal" onclick="event.stopPropagation()">
+        <button class="close-case-study" onclick="forceCloseCaseStudy()">×</button>
+        <div id="caseStudyInnerTarget"></div>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
